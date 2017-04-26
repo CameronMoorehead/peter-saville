@@ -1,0 +1,73 @@
+body {
+  font-family: Helvetica;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/blurry-blue.jpg);
+  background-size: cover;
+  padding: 30px;
+}
+
+.container {
+  background: #eee;
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.title {
+  text-align: center;
+}
+
+.image-main {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+section img {
+  width: 400px;
+  height: 400px;
+}
+
+
+.module {
+  background-color: black;
+  width: 20%;
+  padding-top: 20%;
+  margin: 2%;
+  overflow: hidden;
+}
+
+@media (max-width: 800px) {
+  section .module {
+    width: 40%;
+    padding-top: 40%;
+    background-color: black;
+  }
+}
+@media (max-width: 500px) {
+  section .module {
+    width: 95%;
+    padding-top: 95%;
+    background-color: black;
+  }
+}
+
+/* Animations for visible.js */
+
+.come-in {
+  transform: translateY(150px);
+  animation: come-in 0.8s ease forwards;
+}
+.come-in:nth-child(odd) {
+  animation-duration: 0.6s; /* So they look staggered */
+}
+
+@keyframes come-in {
+  to { transform: translateY(0); }
+}

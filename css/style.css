@@ -1,26 +1,30 @@
 body {
-  font-family: Helvetica;
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/blurry-blue.jpg);
-  background-size: cover;
+  font: 150%/1.6 "Open Sans", sans-serif;
+  font-weight: 400;
+  background: linear-gradient(white, #0f1029 20%);
   padding: 30px;
 }
 
-.container {
+#container {
   background: #eee;
   max-width: 80%;
   margin: 0 auto;
   padding: 20px;
   overflow: hidden;
+  border-radius: 5px;
 }
 
-.title {
+#title {
   text-align: center;
+  font-weight: 300;
+  font-size: 3em;
 }
 
-.image-main {
+#image-main {
   display: block;
   margin: 0 auto;
   width: 100%;
+  padding-bottom: 5vw;
 }
 
 section {
@@ -29,32 +33,45 @@ section {
   justify-content: center;
 }
 
-section img {
-  width: 400px;
-  height: 400px;
-}
-
-
 .module {
-  background-color: black;
-  width: 20%;
-  padding-top: 20%;
   margin: 2%;
   overflow: hidden;
+  width: 20vw;
+  height: 20vw;
 }
 
 @media (max-width: 800px) {
-  section .module {
-    width: 40%;
-    padding-top: 40%;
-    background-color: black;
+  body {
+    font: 125%/1.5 "Open Sans", sans-serif;
+  }
+  #title {
+    font-size: 2.5em;
+  }
+  #container {
+    padding: 15px;
+    max-width: 85%;
+  }
+  .module {
+    width: 34vw;
+    height: 34vw;
   }
 }
-@media (max-width: 500px) {
-  section .module {
-    width: 95%;
-    padding-top: 95%;
-    background-color: black;
+@media (max-width: 625px) {
+  body {
+    font: 100%/1 "Open Sans", sans-serif;
+    padding: 0;
+    margin: 0;
+  }
+  #container {
+    padding: 10px;
+    max-width: 90%;
+  }
+  #title {
+    font-size: 2em;
+  }
+ .module {
+    width: 70vw;
+    height: 70vw;
   }
 }
 

@@ -2,7 +2,7 @@ $(document).ready(function() {
   // Add class when window scrolls
   $(window).scroll(function(event) {
     $(".module").each(function(i, el) {
-      var el = $(el);
+      var el = $(el)
       if (el.visible(true)) {
         el.addClass("come-in");
       }
@@ -14,18 +14,18 @@ $(document).ready(function() {
 
   // Already visible modules
   allMods.each(function(i, el) {
-    var el = $(el);
+    var el = $(el)
     if (el.visible(true)) {
       el.addClass("already-visible");
     }
   });
   win.scroll(function(event) {
     allMods.each(function(i, el) {
-      var el = $(el);
+      var el = $(el)
       if (el.visible(true)) {
-        el.addClass("come-in");
+        el.addClass("come-in")
         }
     });
   });
-  
+
 })

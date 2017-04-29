@@ -1,0 +1,46 @@
+{
+  "image_module": [
+    {
+      "title": "Test1",
+      "description": "This is sample description text",
+      "path_name": "images/anvil.jpg",
+      "key": "0"
+    },
+    {
+      "title": "Test2",
+      "description": "Some more example text",
+      "path_name": "images/architecture.jpg",
+      "key": "1"
+    },
+    {
+      "title": "Test3",
+      "description": "Even more example text",
+      "path_name": "images/ceremony.jpg",
+      "key": "2"
+    },
+    {
+      "title": "Test3",
+      "description": "Even more example text",
+      "path_name": "images/closer.jpg",
+      "key": "3"
+    },
+    {
+      "title": "Test3",
+      "description": "Even more example text",
+      "path_name": "images/ice_age.jpg",
+      "key": "4"
+    },
+    {
+      "title": "Test3",
+      "description": "Even more example text",
+      "path_name": "images/junk_culture.jpg",
+      "key": "5"
+    },
+    {
+      "title": "Test3",
+      "description": "Even more example text",
+      "path_name": "images/movement.jpg",
+      "key": "6"
+    }
+  ]
+}

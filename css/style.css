@@ -40,6 +40,64 @@ section {
   height: 20vw;
 }
 
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  width: 40vw;
+  height: 40vw;
+  padding: 1em;
+  border-radius: 5px;
+}
+
+.modal-title {
+  text-align: center;
+}
+
+.modal-image {
+  display: block;
+  width: 60%;
+  height: 60%;
+  margin: auto;
+}
+
+.prev {
+  position: absolute;
+  top: 45%;
+  left: 5%;
+  cursor: pointer;
+}
+
+.next {
+  position: absolute;
+  top: 45%;
+  right: 5%;
+  cursor: pointer;
+}
+
+.exit {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  cursor: pointer;
+}
+
+.exit:hover {
+  color: red;
+}
+
+.blackout {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+  background: #000;
+  top: 0;
+  left: 0;
+}
+
 @media (max-width: 800px) {
   body {
     font: 125%/1.5 "Open Sans", sans-serif;

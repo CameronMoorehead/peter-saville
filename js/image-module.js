@@ -1,6 +1,6 @@
 $(document).ready(() => {
   const jsonURL = "data/image-module-data.json"
-  $.getJSON(jsonURL, function(json) {
+  $.getJSON(jsonURL, json => {
     let imageList = ""
     $.each(json.image_module, function() {
       imageList +=
@@ -35,7 +35,7 @@ function imageModal(title, des, path, key) {
 
 function prevImage(key) {
   const jsonURL = "data/image-module-data.json"
-  $.getJSON(jsonURL, function(json) {
+  $.getJSON(jsonURL, json => {
     let imageArray = json.image_module
     let prevKey = parseInt(key) - 1
     let imageDataObject = {}
@@ -59,7 +59,7 @@ function prevImage(key) {
 
 function nextImage(key) {
   const jsonURL = "data/image-module-data.json"
-  $.getJSON(jsonURL, function(json) {
+  $.getJSON(jsonURL, json => {
     let imageArray = json.image_module
     let nextKey = parseInt(key) + 1
     let imageDataObject = {}

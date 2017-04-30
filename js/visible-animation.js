@@ -1,29 +1,26 @@
-$(document).ready(function() {
+$(document).ready(() => {
   // Add class when window scrolls
-  $(window).scroll(function(event) {
-    $(".module").each(function(i, el) {
-      var el = $(el)
-      if (el.visible(true)) {
-        el.addClass("come-in");
+  $(window).scroll(event => {
+    $(".module").each((i, el) => {
+      if ($(el).visible(true)) {
+        $(el).addClass("come-in");
       }
     });
   });
   // Leave elements alone if already visible
-  var win = $(window);
-  var allMods = $(".module");
+  let win = $(window);
+  let allMods = $(".module");
 
   // Already visible modules
-  allMods.each(function(i, el) {
-    var el = $(el)
-    if (el.visible(true)) {
-      el.addClass("already-visible");
+  allMods.each((i, el) => {
+    if ($(el).visible(true)) {
+      $(el).addClass("already-visible");
     }
   });
-  win.scroll(function(event) {
-    allMods.each(function(i, el) {
-      var el = $(el)
-      if (el.visible(true)) {
-        el.addClass("come-in")
+  win.scroll(event => {
+    allMods.each((i, el) => {
+      if ($(el).visible(true)) {
+        $(el).addClass("come-in")
         }
     });
   });

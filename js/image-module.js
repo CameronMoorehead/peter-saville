@@ -2,15 +2,16 @@ $(document).ready(() => {
   const jsonURL = "data/image-module-data.json"
   $.getJSON(jsonURL, json => {
     let imageList = ""
-    $.each(json.image_module, function() {
+    let imageData = json.image_module
+    imageData.forEach(image => {
       imageList +=
       `<img
-        src=${this.path_name}
+        src=${image.path_name}
         onclick="imageModal(
-          '${this.title}',
-          '${this.description}',
-          '${this.path_name}',
-          '${this.key}'
+          '${image.title}',
+          '${image.description}',
+          '${image.path_name}',
+          '${image.key}'
         )"
         class="module"
       >`

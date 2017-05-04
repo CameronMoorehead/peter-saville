@@ -1,46 +1,250 @@
 {
   "image_module": [
     {
-      "title": "Test1",
-      "description": "This is sample description text",
-      "path_name": "images/anvil.jpg",
+      "title": "Joy Division: Unkown Pleasures",
+      "description": "1979 Vinyl Album. Image is a data visualisation of a dying star.",
+      "path_name": "images/unkown_pleasures.jpg",
       "key": "0"
     },
     {
-      "title": "Test2",
-      "description": "Some more example text",
-      "path_name": "images/architecture.jpg",
+      "title": "Orchestral Manoeuvres In The Dark",
+      "description": "1980 Vinyl Album. First edition. Minimalist, bright colors. Classic Peter Saville.",
+      "path_name": "images/omd1.jpg",
       "key": "1"
     },
     {
-      "title": "Test3",
-      "description": "Even more example text",
-      "path_name": "images/ceremony.jpg",
+      "title": "Orchestral Manoeuvres In The Dark",
+      "description": "1980 Vinyl Album. Second edition. Minimalist, bright colors. Classic Peter Saville.",
+      "path_name": "images/omd2.jpg",
       "key": "2"
     },
     {
-      "title": "Test3",
-      "description": "Even more example text",
-      "path_name": "images/closer.jpg",
+      "title": "Orchestral Manoeuvres In The Dark",
+      "description": "1980 Vinyl Album. Third edition. Minmialist, bright colors. Classic Peter Saville.",
+      "path_name": "images/omd3.jpg",
       "key": "3"
     },
     {
-      "title": "Test3",
-      "description": "Even more example text",
-      "path_name": "images/ice_age.jpg",
+      "title": "Orchestral Manoeuvres In The Dark",
+      "description": "1980 Vinyl Album. After 40,000 copies. Minimalist, bright colors. Classic Peter Saville.",
+      "path_name": "images/omd4.jpg",
       "key": "4"
     },
     {
-      "title": "Test3",
-      "description": "Even more example text",
-      "path_name": "images/junk_culture.jpg",
+      "title": "Joy Division: Love Will Tear Us Apart",
+      "description": "1980 12-inch Vinyl Single. Very popular. Play on the idea that love will keep us together.",
+      "path_name": "images/love_will_tear_us_apart.jpg",
       "key": "5"
     },
     {
-      "title": "Test6",
-      "description": "Even more example text",
-      "path_name": "images/movement.jpg",
+      "title": "Joy Division: Shes Lost Control",
+      "description": "1980 12-inch Vinyl Single. From the album Unkown Pleasures.",
+      "path_name": "images/shes_lost_control.jpg",
       "key": "6"
+    },
+    {
+      "title": "Pauline Murray and the Invisible Girls: Dream Sequences",
+      "description": "1980 10-inch Vinyl Single. Surrealist imagery.",
+      "path_name": "images/dream_sequences.jpg",
+      "key": "7"
+    },
+    {
+      "title": "Joy Division: Closer",
+      "description": "1980 Vinyl Album. Finished recording just before the suicide of band member Ian Curtis",
+      "path_name": "images/closer.jpg",
+      "key": "8"
+    },
+    {
+      "title": "",
+      "description": "",
+      "path_name": "",
+      "key": "9"
+    },
+    {
+      "title": "",
+      "description": "",
+      "path_name": "",
+      "key": "10"
+    },
+    {
+      "title": "",
+      "description": "",
+      "path_name": "",
+      "key": "11"
+    },
+    {
+      "title": "",
+      "description": "",
+      "path_name": "",
+      "key": "12"
+    },
+    {
+      "title": "",
+      "description": "",
+      "path_name": "",
+      "key": "13"
+    },
+    {
+      "title": "",
+      "description": "",
+      "path_name": "",
+      "key": "14"
+    },
+    {
+      "title": "",
+      "description": "",
+      "path_name": "",
+      "key": "15"
+    },
+    {
+      "title": "",
+      "description": "",
+      "path_name": "",
+      "key": "16"
+    },
+    {
+      "title": "",
+      "description": "",
+      "path_name": "",
+      "key": "17"
+    },
+    {
+      "title": "",
+      "description": "",
+      "path_name": "",
+      "key": "18"
+    },
+    {
+      "title": "",
+      "description": "",
+      "path_name": "",
+      "key": "19"
+    },
+    {
+      "title": "",
+      "description": "",
+      "path_name": "",
+      "key": "20"
+    },
+    {
+      "title": "",
+      "description": "",
+      "path_name": "",
+      "key": "21"
+    },
+    {
+      "title": "",
+      "description": "",
+      "path_name": "",
+      "key": "22"
+    },
+    {
+      "title": "",
+      "description": "",
+      "path_name": "",
+      "key": "23"
+    },
+    {
+      "title": "",
+      "description": "",
+      "path_name": "",
+      "key": "24"
+    },
+    {
+      "title": "",
+      "description": "",
+      "path_name": "",
+      "key": "25"
+    },
+    {
+      "title": "",
+      "description": "",
+      "path_name": "",
+      "key": "26"
+    },
+    {
+      "title": "",
+      "description": "",
+      "path_name": "",
+      "key": "27"
+    },
+    {
+      "title": "",
+      "description": "",
+      "path_name": "",
+      "key": "28"
+    },
+    {
+      "title": "",
+      "description": "",
+      "path_name": "",
+      "key": "29"
+    },
+    {
+      "title": "",
+      "description": "",
+      "path_name": "",
+      "key": "30"
+    },
+    {
+      "title": "",
+      "description": "",
+      "path_name": "",
+      "key": "31"
+    },
+    {
+      "title": "",
+      "description": "",
+      "path_name": "",
+      "key": "32"
+    },
+    {
+      "title": "",
+      "description": "",
+      "path_name": "",
+      "key": "33"
+    },
+    {
+      "title": "",
+      "description": "",
+      "path_name": "",
+      "key": "34"
+    },
+    {
+      "title": "",
+      "description": "",
+      "path_name": "",
+      "key": "35"
+    },
+    {
+      "title": "",
+      "description": "",
+      "path_name": "",
+      "key": "36"
+    },
+    {
+      "title": "",
+      "description": "",
+      "path_name": "",
+      "key": "37"
+    },
+    {
+      "title": "",
+      "description": "",
+      "path_name": "",
+      "key": "38"
+    },
+    {
+      "title": "",
+      "description": "",
+      "path_name": "",
+      "key": "39"
+    },
+    {
+      "title": "",
+      "description": "",
+      "path_name": "",
+      "key": "40"
     }
   ]
 }

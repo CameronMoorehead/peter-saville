@@ -31,7 +31,7 @@ function imageModal(title, des, path, key) {
       <span class="exit" onclick="exitModal()">&times;</span>
     </div>`
   $("body").append("<div class='blackout'></div>")
-  $("body").append(modal)
+  $(modal).hide().appendTo("body").fadeIn(500)
 }
 
 function prevImage(key) {

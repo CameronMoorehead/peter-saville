@@ -64,6 +64,9 @@ section {
   height: 20vw;
   margin-bottom: 1em;
 }
+.module:hover {
+  cursor: pointer;
+}
 
 .modal {
   position: fixed;

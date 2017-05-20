@@ -1,5 +1,6 @@
 (($) => {
   $(document).ready(() => {
+    
     const displayImages = {
       init() {
         this.cacheDom()
@@ -23,26 +24,28 @@
       selectedImageKey: null,
       init() {
         this.cacheDom()
-        this.bindEvents()
+        this.bindImageHandler()
       },
       cacheDom() {
         this.$img = $("img")
       },
-      bindEvents() {
-        this.$img.click(e => { this.selectImage(e) })
-        $(".prev").click(() => { this.selectImage(this.prevImage) })
-        $(".next").click(() => { this.selectImage(this.nextImage) })
+      bindImageHandler() {
+        this.$img.click(e => { this.selectImage(null, e) })
+      },
+      rebindModalEvents() {
+        $(".prev").click(() => { this.selectImage(this.prevImage()) })
+        $(".next").click(() => { this.selectImage(this.nextImage()) })
         $(".exit").click(() => { this.exitModal() })
       },
       render(selectedImage) {
         $("body").append("<div class='blackout'></div>")
         $(selectedImage).hide().appendTo("body").fadeIn(500)
       },
-      selectImage(e) {
-        this.selectedImageKey = ($(e.currentTarget).attr("key"))
+      selectImage(key, e) {
+        this.selectedImageKey = key !== null ? key : parseInt(($(e.currentTarget).attr("key")), 10)
         this.imageModal()
         this.render(this.modal)
-        this.bindEvents()
+        this.rebindModalEvents()
       },
       imageModal() {
         const imageDataObject = imageData.image_module[this.selectedImageKey]
@@ -61,10 +64,22 @@
         $(".modal").remove()
       },
       prevImage() {
-
+        // Clear memory leak
+        this.exitModal()
+        if (this.selectedImageKey === 0) {
+          return imageData.image_module.length -1
+        } else {
+          return  this.selectedImageKey -1
+        }
       },
       nextImage() {
-
+        // Clear memory leak
+        this.exitModal()
+        if (this.selectedImageKey === imageData.image_module.length -1) {
+          return 0
+        } else {
+          return this.selectedImageKey +1
+        }
       }
     }
 
@@ -83,56 +98,3 @@
   })()
 
 })(jQuery)
-function imageModal(title, des, path, key) {
-  let modal =
-    `<div class="modal">
-      <span class="prev" onclick="prevImage('${key}')">&larr;</span>
-      <h3 class="modal-title">${title}</h3>
-      <img src=${path} class="modal-image">
-      <p>${des}</p>
-      <span class="next" onclick="nextImage('${key}')">&rarr;</span>
-      <span class="exit" onclick="exitModal()">&times;</span>
-    </div>`
-  $("body").append("<div class='blackout'></div>")
-  $(modal).hide().appendTo("body").fadeIn(500)
-}
-//   function prevImage(key) {
-//     let prevKey = parseInt(key) -1
-//     let imageDataObject = {}
-//     if (parseInt(key) === 0) {
-//       prevKey = imageArray.length -1
-//       imageDataObject = imageModuleData[prevKey]
-//     } else {
-//       imageDataObject = imageModuleData[prevKey]
-//     }
-//     // clear from DOM for memory
-//     exitModal()
-//     return imageModal(
-//       imageDataObject.title,
-//       imageDataObject.description,
-//       imageDataObject.path_name,
-//       imageDataObject.key
-//     )
-//   }
-//
-//   function nextImage(key) {
-//     let nextKey = parseInt(key) +1
-//     let imageDataObject = {}
-//     if (parseInt(key) === imageModuleData) {
-//       nextKey = 0
-//       imageDataObject = imageModuleData[nextKey]
-//     } else {
-//       imageDataObject = imageModuleData[nextKey]
-//     }
-//     exitModal()
-//     return imageModal(
-//       imageDataObject.title,
-//       imageDataObject.description,
-//       imageDataObject.path_name,
-//       imageDataObject.key
-//     )
-//   }
-//   function exitModal() {
-//     $(".blackout").remove()
-//     $(".modal").remove()
-//   }
